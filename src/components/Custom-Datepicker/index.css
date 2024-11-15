@@ -1,0 +1,12 @@
+.react-datepicker-wrapper {
+   display: block;
+}
+.react-datepicker {
+   max-width: 260px;
+}
+.input-group-calender {
+  max-width: 100%;
+}
+.react-datepicker__input-container .form-control.is-invalid {
+   border-color: #dc3545;
+}

@@ -1,0 +1,125 @@
+$primary: #135D66;
+// warning
+$warning: #FFDC7F;
+// dark
+$dark: #001F3F;
+$body-bg: #fbfffe;
+$body-color: #222;
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+// auth
+@import "auth.scss";
+@import "home.scss";
+@import "empty-layout.scss";
+
+// .well {
+//   @media (max-width: 768px) {
+//     margin-top: 60px;
+//   }
+// }
+
+
+body {
+  padding-top: 60px;
+}
+
+.hidden-sm {
+  @media (max-width: 440px) {
+    display: none;
+  }
+}
+
+/* classes */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* bt overwrites */
+.form-check-label {
+  cursor: pointer;
+}
+
+/* accordion */
+.accordion .accordion-item {
+  border: 1px solid #dee2e6;
+  margin-bottom: 7px;
+}
+.accordion .accordion-header .accordion-button {
+  background-color: #f0f0f0;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-weight: bold;
+}
+
+/* alert  */
+.alert.alert-warning {
+  position: relative;
+  padding-left: 2rem;
+}
+.alert.alert-warning:before {
+  content: "";
+  width: 8px;
+  opacity: 0.5;
+  height: 100%;
+  display: block;
+  background-color: #664d03;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* form invalid text help */
+.invalid {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: var(--bs-form-invalid-color);
+}
+
+/* .popover */
+
+@media (min-width: 480px) {
+  .popover,
+  .tooltip-inner {
+    max-width: 480px;
+  }
+}
+@media (min-width: 768px) {
+  .popover,
+  .tooltip-inner {
+    max-width: 600px;
+  }
+}
+
+.tooltip-inner {
+  background: #fff;
+  color: #212529;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0px 2px 17px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 17px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 17px -7px rgba(0, 0, 0, 0.75);
+}
+.tooltip .tooltip-arrow {
+  display: none;
+}
+
+/////////////// compliation
+.payment-compliation {
+  max-width: 460px;
+  min-width: 400px;
+  
+  margin: auto;
+
+  @media (max-width: 540px) {
+    width: 100%;
+  }
+} 
+.payment-compliation_content {
+  margin: 36px auto 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
